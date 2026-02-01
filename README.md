@@ -39,7 +39,7 @@ Design engagement and pricing strategies separately for subscribers and casual u
 <img src="membership.png" width="400">
 
 ### SQL Query Reference  
-`- **SQL Query** [HERE]()
+`- **SQL Query** [HERE](membership.sql)
 
 
 ## 2️. Time-Based Demand & Peak Hour Analysis
@@ -58,7 +58,7 @@ Ensure 'rebalancing' crews (the trucks that move bikes) are active between 10:00
 <img src="hourlystart.png" width="600">
 
 ### SQL Query Reference  
-`- **SQL Query** [HERE]()
+`- **SQL Query** [HERE](hourlystart.sql)
 
 ---
 
@@ -78,7 +78,7 @@ Use smoothed trends rather than raw daily metrics for performance monitoring and
 
 ### SQL Query Reference  
 `
-- **SQL Query** [HERE]()
+- **SQL Query** [HERE](movingavg.sql)
 
 ---
 
@@ -97,7 +97,7 @@ Prioritize maintenance, capacity, and availability at high-traffic stations.
 - <img src="busy.png" width="450"> 
 
 ### SQL Query Reference  
-- **SQL Query** [HERE]()
+- **SQL Query** [HERE](popular.sql)
 
 ---
 
@@ -119,7 +119,7 @@ Ride duration distribution is heavily skewed toward medium-length trips, with ne
 
 
 ### SQL Query Reference  
-- **SQL Query** [HERE]()
+- **SQL Query** [HERE](ridetype.sql)
 
 ---
 
@@ -136,7 +136,7 @@ Prioritize maintenance, capacity, and availability at high-traffic stations.
 
 ### SQL Query Reference  
 `
-- **SQL Query** [HERE]()
+- **SQL Query** [HERE](netflow.sql)
 
 ---
 
@@ -146,15 +146,17 @@ Prioritize maintenance, capacity, and availability at high-traffic stations.
 Is user growth sustainable when accounting for churn?
 
 ### Key Insight  
-MoM user growth alone overstates platform health; inactivity-based churn provides essential retention context.
+Month-over-Month growth fluctuates significantly, ranging from **+57% at peak** to **−17% at trough**. This indicates that user acquisition is inconsistent and campaign- or event-driven, rather than structurally stable.
 
 ### Recommendation  
-Track net user growth by combining acquisition and churn metrics.
-
+- Focus on retaining users in the first 30 days after signup, as high-growth months are followed by sharp drops.
+- Reduce dependence on short-term acquisition spikes and aim for more consistent monthly signups.
+- Improve early user activation by encouraging the first ride within the first 7 days.
 
 ### SQL Query Reference  
-`
-- **SQL Query** [HERE]()`
+
+- **SQL Query** for Monthly Churn [HERE](monthlychurn.sql)`
+- **SQL Query** for Month-on-Month User Growth [HERE](momuser.sql)`
 
 ---
 

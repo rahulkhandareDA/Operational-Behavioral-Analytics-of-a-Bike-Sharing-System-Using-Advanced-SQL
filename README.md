@@ -4,9 +4,9 @@
 
 ## Project Background
 
-UrbanRoll is an urban bike-sharing platform designed for short-distance commuting and casual city travel. The platform operates in a high-frequency mobility environment where growth, retention, and operational efficiency are tightly coupled with user behavior and station availability.
+An urban bike-sharing platform designed for short-distance commuting and casual city travel. The system operates in a high-frequency mobility environment where growth, retention, and operational efficiency are closely linked to user behavior and station availability.
 
-This project applies SQL-based analytics to ride, user, and station data to answer key business and operational questions faced by shared mobility platforms.
+This project applies SQL-based analytics to ride-level, user-level, and station-level data to answer key business and operational questions commonly faced by shared mobility platforms.
 
 ---
 
@@ -18,7 +18,7 @@ Each section follows a structured analytics flow:
 
 ---
 
-## 1️⃣ Membership-Based Usage Analysis
+## 1. Membership-Based Usage Analysis
 
 ### Business Question  
 How do different membership types use the UrbanRoll platform?
@@ -30,15 +30,14 @@ Subscriber users generate the majority of ride volume with shorter, more consist
 Design engagement and pricing strategies separately for subscribers and casual users instead of applying uniform policies.
 
 ### Supporting Visual  
-- Bar chart: Total rides by membership  
-- Line or box plot: Average ride duration by membership  
+
 
 ### SQL Query Reference  
 `membership_usage_analysis.sql`
 
 ---
 
-## 2️⃣ Time-Based Demand & Peak Hour Analysis
+## 2️. Time-Based Demand & Peak Hour Analysis
 
 ### Business Question  
 When does demand peak during the day?
@@ -57,7 +56,7 @@ Align operational planning and bike availability with observed peak demand windo
 
 ---
 
-## 3️⃣ Daily Demand Trend (7-Day Moving Average)
+## 3️. Daily Demand Trend (7-Day Moving Average)
 
 ### Business Question  
 Is platform usage growing consistently over time?
@@ -76,7 +75,7 @@ Use smoothed trends rather than raw daily metrics for performance monitoring and
 
 ---
 
-## 4️⃣ Station Popularity & Utilization
+## 4️. Station Popularity & Utilization
 
 ### Business Question  
 Which stations experience the highest ride activity?
@@ -95,7 +94,7 @@ Prioritize maintenance, capacity, and availability at high-traffic stations.
 
 ---
 
-## 5️⃣ Ride Duration Segmentation
+## 5️. Ride Duration Segmentation
 
 ### Business Question  
 How are rides distributed by duration?
@@ -114,7 +113,7 @@ Use duration segments to inform pass design and pricing thresholds.
 
 ---
 
-## 6️⃣ Station-Level Net Ride Flow (Rebalancing Analysis)
+## 6️. Station-Level Net Ride Flow (Rebalancing Analysis)
 
 ### Business Question  
 Which stations consistently gain or lose bikes?
@@ -133,7 +132,7 @@ Implement targeted rebalancing and incentive mechanisms to correct station-level
 
 ---
 
-## 7️⃣ Growth & Churn Proxy Analysis
+## 7️. Growth & Churn Proxy Analysis
 
 ### Business Question  
 Is user growth sustainable when accounting for churn?
